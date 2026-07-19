@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kategori 1: 30 Paket Sumba Timur - Sewa XL7</title>
+    <title>Kategori 1: Percobaan Paket Sumba Timur - Sewa XL7</title>
     <style>
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -32,14 +31,13 @@
             position: relative;
         }
 
-            header h1 {
-                margin: 0;
-                font-size: 24px;
-                color: #ffc107;
-                text-transform: uppercase;
-            }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #ffc107;
+            text-transform: uppercase;
+        }
 
-        /* Tombol Kembali ke Menu Utama */
         .btn-kembali {
             position: absolute;
             left: 20px;
@@ -54,9 +52,9 @@
             transition: background 0.3s;
         }
 
-            .btn-kembali:hover {
-                background: #e0a800;
-            }
+        .btn-kembali:hover {
+            background: #e0a800;
+        }
 
         main {
             margin: 30px auto;
@@ -66,14 +64,12 @@
             box-sizing: border-box;
         }
 
-        /* Wadah List Paket */
         .container-paket {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
 
-        /* Kartu Desain Estafet Searah per Paket */
         .kartu-paket {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(8px);
@@ -97,7 +93,6 @@
             text-align: center;
         }
 
-        /* Tampilan Rute Mengalir Panah */
         .rute-flow {
             flex-grow: 1;
             margin: 0 20px;
@@ -115,9 +110,10 @@
 
         /* Tombol Pesan Langsung via WA */
         .btn-book {
-            background: #25d366; /* Warna Hijau WhatsApp */
+            background: #25d366; 
             color: white;
-            text-decoration: none;
+            border: none;
+            cursor: pointer;
             padding: 8px 16px;
             border-radius: 6px;
             font-size: 14px;
@@ -126,63 +122,38 @@
             white-space: nowrap;
         }
 
-            .btn-book:hover {
-                transform: scale(1.05);
-                background: #20ba5a;
-            }
+        .btn-book:hover {
+            transform: scale(1.05);
+            background: #20ba5a;
+        }
 
-        /* Optimasi Tampilan Handphone */
         @media (max-width: 650px) {
-            header {
-                padding: 60px 0 15px 0;
-            }
-
-            .btn-kembali {
-                left: 50%;
-                transform: translateX(-50%);
-                top: 15px;
-            }
-
-            .kartu-paket {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
-            }
-
-            .rute-flow {
-                margin: 10px 0;
-                font-size: 14px;
-                line-height: 1.6;
-            }
-
-            .panah {
-                display: block;
-                margin: 4px 0;
-                transform: rotate(90deg);
-            }
+            header { padding: 60px 0 15px 0; }
+            .btn-kembali { left: 50%; transform: translateX(-50%); top: 15px; }
+            .kartu-paket { flex-direction: column; gap: 15px; text-align: center; }
+            .rute-flow { margin: 10px 0; font-size: 14px; line-height: 1.6; }
+            .panah { display: block; margin: 4px 0; transform: rotate(90deg); }
         }
     </style>
 </head>
 <body>
 
-    <!-- KOP / HEADER DENGAN TOMBOL KEMBALI -->
     <header>
         <a href="index.html" class="btn-kembali">⬅ Kembali</a>
-        <h1>30 Paket Wisata Sumba Timur</h1>
+        <h1>Uji Coba Rute Sumba Timur</h1>
     </header>
 
-    <!-- DAFTAR PAKET (PERCOBAAN) -->
     <main>
         <div class="container-paket">
 
-              <!-- PAKET 01 -->
+            <!-- PAKET 01 -->
             <div class="kartu-paket">
                 <div class="info-nomor">Paket 01</div>
                 <div class="rute-flow">
                     Bukit Wairinding <span class="panah">➔</span> Kampung Adat Prailiu <span class="panah">➔</span> Sunset Pantai Walakiri
                 </div>
-                <!-- KODE MUTAKHIR: FULL URL ENCODED (100% ANTI KOSONG DI WA MESSENGER ANDROID) -->
-                <a href="https://wa.me/6282147620822" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+                <!-- Tombol memicu fungsi JavaScript kirimPesan() -->
+                <button onclick="kirimPesan('Paket 01', 'Bukit Wairinding ➔ Kampung Adat Prailiu ➔ Sunset Pantai Walakiri')" class="btn-book">🚖 Pesan XL7</button>
             </div>
 
             <!-- PAKET 02 -->
@@ -191,8 +162,7 @@
                 <div class="rute-flow">
                     Bukit Tenau <span class="panah">➔</span> Pusat Tenun Ikat Waingapu <span class="panah">➔</span> Pantai Londa Lima
                 </div>
-                <!-- KODE MUTAKHIR: FULL URL ENCODED (100% ANTI KOSONG DI WA MESSENGER ANDROID) -->
-                <a href="https://wa.me/6282147620822" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+                <button onclick="kirimPesan('Paket 02', 'Bukit Tenau ➔ Pusat Tenun Ikat Waingapu ➔ Pantai Londa Lima')" class="btn-book">🚖 Pesan XL7</button>
             </div>
 
             <!-- PAKET 03 -->
@@ -201,12 +171,53 @@
                 <div class="rute-flow">
                     Sabana Puru Kambera <span class="panah">➔</span> Pantai Puru Kambera <span class="panah">➔</span> Sunset Bukit Mondu
                 </div>
-                <!-- KODE MUTAKHIR: FULL URL ENCODED (100% ANTI KOSONG DI WA MESSENGER ANDROID) -->
-                <a href="https://wa.me/6282147620822" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+                <button onclick="kirimPesan('Paket 03', 'Sabana Puru Kambera ➔ Pantai Puru Kambera ➔ Sunset Bukit Mondu')" class="btn-book">🚖 Pesan XL7</button>
             </div>
 
         </div>
     </main>
+
+    <!-- SISTEM JAVASCRIPT PINTAR ANTI-KOSONG SUMBA PRIVATE TOUR -->
+    <script>
+        function kirimPesan(namaPaket, rutePaket) {
+            // 1. Menyusun teks komersial rapi lengkap dengan terjemahan Inggris
+            var teksPesan = "Halo Sumba Private Drive & Tour! Saya ingin memesan paket perjalanan berikut:\n\n" +
+                            "📌 *" + namaPaket + "* (" + rutePaket + ")\n\n" +
+                            "----------------------------------------\n" +
+                            "🇮🇩 SPESIFIKASI LAYANAN (ID):\n" +
+                            "🚘 Jenis Layanan: Tur Privat Sehari Penuh (Sudah Termasuk Sopir + Mobil + Bensin/BBM)\n" +
+                            "⏱️ Jam Operasional: Sekitar 5 hingga 10 jam per hari\n" +
+                            "📍 Ritme Perjalanan: Sangat santai! Waktu berkendara rata-rata antar lokasi hanya 20-45 menit.\n" +
+                            "💰 Tarif: Mulai dari Rp 800.000 hingga Rp 3.300.000 / hari (Semua Termasuk)\n\n" +
+                            "----------------------------------------\n" +
+                            "🇬🇧 SERVICE SPECIFICATIONS (EN):\n" +
+                            "🚘 Service Type: Full Day Private Tour (Driver + Car + Petrol/BBM Included)\n" +
+                            "⏱️ Operating Hours: Around 5 to 10 hours per day\n" +
+                            "📍 Pacing: Very relaxed! Average driving time between spots is only 20-45 minutes.\n" +
+                            "💰 Rate: Starting from IDR 800,000 to IDR 3,300,000 / day (All-Inclusive)\n\n" +
+                            "----------------------------------------\n" +
+                            "✍️ FORMAT ORDER PEMESANAN:\n" +
+                            "➔ Nama Anda :\n" +
+                            "➔ Tanggal & Durasi Hari :\n" +
+                            "➔ Lokasi Jemput (Hotel di Waingapu) :\n\n" +
+                            "(Catatan: Format pesanan ini sudah otomatis tersalin. Silakan tempel/paste di kolom chat WhatsApp)";
+
+            // 2. Proses Menyalin teks otomatis ke memori HP/Laptop
+            var penampungTeks = document.createElement("textarea");
+            penampungTeks.value = teksPesan;
+            document.body.appendChild(penampungTeks);
+            penampungTeks.select();
+            penampungTeks.setSelectionRange(0, 99999); // Untuk support HP/Mobile
+            document.execCommand("copy");
+            document.body.removeChild(penampungTeks);
+
+            // 3. Memberi tahu pengguna bahwa teks sudah tersalin, lalu buka WA nomor Anda
+            alert("Format pemesanan untuk " + namaPaket + " otomatis sudah TERSALIN!\n\nSilakan klik 'OK', lalu TEMPEL/PASTE langsung di kolom chat WhatsApp yang terbuka.");
+            
+            // Membuka ruang chat nomor Anda secara bersih tanpa resiko teks hilang
+            window.open("https://wa.me/6282147620822", "_blank");
+        }
+    </script>
 
 </body>
 </html>
