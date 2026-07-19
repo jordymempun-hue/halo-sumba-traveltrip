@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori 1: 30 Paket Sumba Timur - Sewa XL7</title>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ffc107;
+            position: relative;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+                color: #ffc107;
+                text-transform: uppercase;
+            }
+
+        /* Tombol Kembali ke Menu Utama */
+        .btn-kembali {
+            position: absolute;
+            left: 20px;
+            top: 22px;
+            background: #ffc107;
+            color: #111;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+            .btn-kembali:hover {
+                background: #e0a800;
+            }
+
+        main {
+            margin: 30px auto;
+            max-width: 900px;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        /* Wadah List Paket */
+        .container-paket {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Kartu Desain Estafet Searah per Paket */
+        .kartu-paket {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .info-nomor {
+            background: #ffc107;
+            color: #111;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 15px;
+            min-width: 75px;
+            text-align: center;
+        }
+
+        /* Tampilan Rute Mengalir Panah */
+        .rute-flow {
+            flex-grow: 1;
+            margin: 0 20px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .panah {
+            color: #ffc107;
+            margin: 0 8px;
+            font-weight: bold;
+        }
+
+        /* Tombol Pesan Langsung via WA */
+        .btn-book {
+            background: #25d366; /* Warna Hijau WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: transform 0.2s;
+            white-space: nowrap;
+        }
+
+            .btn-book:hover {
+                transform: scale(1.05);
+                background: #20ba5a;
+            }
+
+        /* Optimasi Tampilan Handphone */
+        @media (max-width: 650px) {
+            header {
+                padding: 60px 0 15px 0;
+            }
+
+            .btn-kembali {
+                left: 50%;
+                transform: translateX(-50%);
+                top: 15px;
+            }
+
+            .kartu-paket {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .rute-flow {
+                margin: 10px 0;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            .panah {
+                display: block;
+                margin: 4px 0;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- KOP / HEADER DENGAN TOMBOL KEMBALI -->
+    <header>
+        <a href="HTMLPage1.html" class="btn-kembali">⬅ Kembali</a>
+        <h1>30 Paket Wisata Sumba Timur</h1>
+    </header>
+
+    <!-- DAFTAR PAKET (PERCOBAAN) -->
+    <main>
+        <div class="container-paket">
+
+            <!-- PAKET 01 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 01</div>
+                <div class="rute-flow">
+                    Bukit Wairinding <span class="panah">➔</span> Kampung Adat Prailiu <span class="panah">➔</span> Sunset Pantai Walakiri
+                </div>
+                <!-- LINK WHATSAPP PINTAR WA.ME - PAKET 01 -->
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 02 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 02</div>
+                <div class="rute-flow">
+                    Bukit Tenau <span class="panah">➔</span> Pusat Tenun Ikat Waingapu <span class="panah">➔</span> Pantai Londa Lima
+                </div>
+                <!-- LINK WHATSAPP PINTAR WA.ME - PAKET 02 -->
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 03 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 03</div>
+                <div class="rute-flow">
+                    Sabana Puru Kambera <span class="panah">➔</span> Pantai Puru Kambera <span class="panah">➔</span> Sunset Bukit Mondu
+                </div>
+                <!-- LINK WHATSAPP PINTAR WA.ME - PAKET 03 -->
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
