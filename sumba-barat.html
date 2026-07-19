@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori 3: 20 Paket Sumba Barat - Sewa XL7</title>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ffc107;
+            position: relative;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+                color: #ffc107;
+                text-transform: uppercase;
+            }
+
+        /* Tombol Kembali ke Menu Utama */
+        .btn-kembali {
+            position: absolute;
+            left: 20px;
+            top: 22px;
+            background: #ffc107;
+            color: #111;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+            .btn-kembali:hover {
+                background: #e0a800;
+            }
+
+        main {
+            margin: 30px auto;
+            max-width: 900px;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        /* Wadah List Paket */
+        .container-paket {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Kartu Desain Estafet Searah per Paket */
+        .kartu-paket {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .info-nomor {
+            background: #ffc107;
+            color: #111;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 15px;
+            min-width: 75px;
+            text-align: center;
+        }
+
+        /* Tampilan Rute Mengalir Panah */
+        .rute-flow {
+            flex-grow: 1;
+            margin: 0 20px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .panah {
+            color: #ffc107;
+            margin: 0 8px;
+            font-weight: bold;
+        }
+
+        /* Tombol Pesan Langsung via WA */
+        .btn-book {
+            background: #25d366; /* Warna Hijau WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: transform 0.2s;
+            white-space: nowrap;
+        }
+
+            .btn-book:hover {
+                transform: scale(1.05);
+                background: #20ba5a;
+            }
+
+        /* Optimasi Tampilan Handphone */
+        @media (max-width: 650px) {
+            header {
+                padding: 60px 0 15px 0;
+            }
+
+            .btn-kembali {
+                left: 50%;
+                transform: translateX(-50%);
+                top: 15px;
+            }
+
+            .kartu-paket {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .rute-flow {
+                margin: 10px 0;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            .panah {
+                display: block;
+                margin: 4px 0;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- KOP / HEADER DENGAN TOMBOL KEMBALI -->
+    <header>
+        <a href="HTMLPage1.html" class="btn-kembali">⬅ Kembali</a>
+        <h1>20 Paket Wisata Sumba Barat</h1>
+    </header>
+
+    <!-- DAFTAR PAKET -->
+    <main>
+        <div class="container-paket">
+
+            <!-- PAKET 51 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 51</div>
+                <div class="rute-flow">
+                    Kampung Adat Prai Ijing <span class="panah">➔</span> Air Terjun Lapopu <span class="panah">➔</span> Sunset Pantai Rua
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 52 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 52</div>
+                <div class="rute-flow">
+                    Situs Budaya Tarung <span class="panah">➔</span> Lembah Wanokaka <span class="panah">➔</span> Pantai Marosi
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 53 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 53</div>
+                <div class="rute-flow">
+                    Kampung Adat Ching <span class="panah">➔</span> Lapangan Pasola Lamboya <span class="panah">➔</span> Pantai Kerewei
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 54 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 54</div>
+                <div class="rute-flow">
+                    Air Terjun Lapopu <span class="panah">➔</span> Pusat Kerajinan Tenun Waikabubak <span class="panah">➔</span> Pantai Watubela
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 55 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 55</div>
+                <div class="rute-flow">
+                    Kampung Adat Prai Ijing <span class="panah">➔</span> Situs Budaya Elu <span class="panah">➔</span> Sunset Pantai Marosi
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 56 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 56</div>
+                <div class="rute-flow">
+                    Situs Budaya Tarung <span class="panah">➔</span> Air Terjun Lapopu <span class="panah">➔</span> Pantai Kerewei
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 57 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 57</div>
+                <div class="rute-flow">
+                    Lembah Wanokaka <span class="panah">➔</span> Pantai Rua <span class="panah">➔</span> Sunset Pantai Nihiwatu
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 58 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 58</div>
+                <div class="rute-flow">
+                    Kampung Adat Ching <span class="panah">➔</span> Kampung Adat Prai Ijing <span class="panah">➔</span> Kuliner Kota Waikabubak
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 59 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 59</div>
+                <div class="rute-flow">
+                    Air Terjun Lapopu <span class="panah">➔</span> Pantai Watubela <span class="panah">➔</span> Pantai Marosi
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 60 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 60</div>
+                <div class="rute-flow">
+                    Situs Budaya Elu <span class="panah">➔</span> Lapangan Pasola Lamboya <span class="panah">➔</span> Pantai Rua
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 61 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 61</div>
+                <div class="rute-flow">
+                    Kampung Adat Prai Ijing <span class="panah">➔</span> Lembah Wanokaka <span class="panah">➔</span> Pantai Kerewei
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 62 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 62</div>
+                <div class="rute-flow">
+                    Situs Budaya Tarung <span class="panah">➔</span> Air Terjun Lapopu <span class="panah">➔</span> Sunset Pantai Marosi
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 63 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 63</div>
+                <div class="rute-flow">
+                    Kampung Adat Ching <span class="panah">➔</span> Pantai Rua <span class="panah">➔</span> Pantai Watubela
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 64 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 64</div>
+                <div class="rute-flow">
+                    Pusat Kerajinan Tenun Waikabubak <span class="panah">➔</span> Kampung Adat Prai Ijing <span class="panah">➔</span> Pantai Marosi
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 65 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 65</div>
+                <div class="rute-flow">
+                    Air Terjun Lapopu <span class="panah">➔</span> Lapangan Pasola Lamboya <span class="panah">➔</span> Sunset Pantai Kerewei
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 66 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 66</div>
+                <div class="rute-flow">
+                    Situs Budaya Elu <span class="panah">➔</span> Pantai Rua <span class="panah">➔</span> Kuliner Lokal Waikabubak
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 67 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 67</div>
+                <div class="rute-flow">
+                    Kampung Adat Prai Ijing <span class="panah">➔</span> Air Terjun Lapopu <span class="panah">➔</span> Pantai Watubela
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 68 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 68</div>
+                <div class="rute-flow">
+                    Situs Budaya Tarung <span class="panah">➔</span> Lembah Wanokaka <span class="panah">➔</span> Sunset Pantai Rua
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 69 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 69</div>
+                <div class="rute-flow">
+                    Kampung Adat Ching <span class="panah">➔</span> Lapangan Pasola Lamboya <span class="panah">➔</span> Pantai Marosi
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 70 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 70</div>
+                <div class="rute-flow">
+                    Air Terjun Lapopu <span class="panah">➔</span> Kampung Adat Prai Ijing <span class="panah">➔</span> Sunset Pantai Kerewei
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

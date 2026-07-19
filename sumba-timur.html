@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori 1: 30 Paket Sumba Timur - Sewa XL7</title>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ffc107;
+            position: relative;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+                color: #ffc107;
+                text-transform: uppercase;
+            }
+
+        /* Tombol Kembali ke Menu Utama */
+        .btn-kembali {
+            position: absolute;
+            left: 20px;
+            top: 22px;
+            background: #ffc107;
+            color: #111;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+            .btn-kembali:hover {
+                background: #e0a800;
+            }
+
+        main {
+            margin: 30px auto;
+            max-width: 900px;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        /* Wadah List Paket */
+        .container-paket {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Kartu Desain Estafet Searah per Paket */
+        .kartu-paket {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .info-nomor {
+            background: #ffc107;
+            color: #111;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 15px;
+            min-width: 75px;
+            text-align: center;
+        }
+
+        /* Tampilan Rute Mengalir Panah */
+        .rute-flow {
+            flex-grow: 1;
+            margin: 0 20px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .panah {
+            color: #ffc107;
+            margin: 0 8px;
+            font-weight: bold;
+        }
+
+        /* Tombol Pesan Langsung via WA */
+        .btn-book {
+            background: #25d366; /* Warna Hijau WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: transform 0.2s;
+            white-space: nowrap;
+        }
+
+            .btn-book:hover {
+                transform: scale(1.05);
+                background: #20ba5a;
+            }
+
+        /* Optimasi Tampilan Handphone */
+        @media (max-width: 650px) {
+            header {
+                padding: 60px 0 15px 0;
+            }
+
+            .btn-kembali {
+                left: 50%;
+                transform: translateX(-50%);
+                top: 15px;
+            }
+
+            .kartu-paket {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .rute-flow {
+                margin: 10px 0;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            .panah {
+                display: block;
+                margin: 4px 0;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- KOP / HEADER DENGAN TOMBOL KEMBALI -->
+    <header>
+        <a href="HTMLPage1.html" class="btn-kembali">⬅ Kembali</a>
+        <h1>30 Paket Wisata Sumba Timur</h1>
+    </header>
+
+    <!-- DAFTAR PAKET -->
+    <main>
+        <div class="container-paket">
+
+            <!-- PAKET 1 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 01</div>
+                <div class="rute-flow">
+                    Bukit Wairinding <span class="panah">➔</span> Kampung Adat Prailiu <span class="panah">➔</span> Sunset Pantai Walakiri
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 2 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 02</div>
+                <div class="rute-flow">
+                    Bukit Tenau <span class="panah">➔</span> Pusat Tenun Ikat Waingapu <span class="panah">➔</span> Pantai Londa Lima
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 3 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 03</div>
+                <div class="rute-flow">
+                    Sabana Puru Kambera <span class="panah">➔</span> Pantai Puru Kambera <span class="panah">➔</span> Sunset Bukit Mondu
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 4 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 04</div>
+                <div class="rute-flow">
+                    Bukit Piarakuku <span class="panah">➔</span> Kampung Adat Lambanapu <span class="panah">➔</span> Pantai Tarimbang (Paket khusus wilayah selatan)
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 5 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 05</div>
+                <div class="rute-flow">
+                    Air Terjun Tanggedu <span class="panah">➔</span> Sabana Mondu <span class="panah">➔</span> Pantai Puru Kambera (Rute Sumba Timur Utara)
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 6 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 06</div>
+                <div class="rute-flow">
+                    Bukit Ndapayami <span class="panah">➔</span> Kampung Adat Prailiu <span class="panah">➔</span> Pantai Walakiri
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 7 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 07</div>
+                <div class="rute-flow">
+                    Bukit Warinding <span class="panah">➔</span> Air Terjun Waimarang <span class="panah">➔</span> Sunset Pantai Rende
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 8 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 08</div>
+                <div class="rute-flow">
+                    Kampung Adat Rende <span class="panah">➔</span> Pusat Tenun Mangili <span class="panah">➔</span> Pantai Tarimbang
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 9 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 09</div>
+                <div class="rute-flow">
+                    Bukit Tanarara <span class="panah">➔</span> Kampung Adat Prailiu <span class="panah">➔</span> Sunset Pantai Walakiri
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 10 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 10</div>
+                <div class="rute-flow">
+                    Bukit Tenau <span class="panah">➔</span> Air Terjun Kanabu Wai <span class="panah">➔</span> Pantai Londa Lima
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 11 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 11</div>
+                <div class="rute-flow">
+                    Sabana Puru Kambera <span class="panah">➔</span> Kampung Adat Patawang <span class="panah">➔</span> Pantai Walakiri
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 12 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 12</div>
+                <div class="rute-flow">
+                    Bukit Wairinding <span class="panah">➔</span> Bukit Piarakuku <span class="panah">➔</span> Kuliner Ikan Bakar Dermaga Waingapu
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+                       <!-- PAKET 13 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 13</div>
+                <div class="rute-flow">
+                    Air Terjun Waimarang <span class="panah">➔</span> Kampung Adat Rende <span class="panah">➔</span> Pantai Walakiri
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 14 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 14</div>
+                <div class="rute-flow">
+                    Bukit Tanarara <span class="panah">➔</span> Lembah Kanatang <span class="panah">➔</span> Pantai Londa Lima
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 15 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 15</div>
+                <div class="rute-flow">
+                    Kampung Adat Kallu <span class="panah">➔</span> Bukit Tenau <span class="panah">➔</span> Sunset Pantai Walakiri
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 16 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 16</div>
+                <div class="rute-flow">
+                    Bukit Mondu <span class="panah">➔</span> Air Terjun Tanggedu <span class="panah">➔</span> Pantai Puru Kambera
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 17 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 17</div>
+                <div class="rute-flow">
+                    Sabana Puru Kambera <span class="panah">➔</span> Kampung Adat Prailiu <span class="panah">➔</span> Pantai Londa Lima
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 18 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 18</div>
+                <div class="rute-flow">
+                    Bukit Wairinding <span class="panah">➔</span> Bukit Tanarara <span class="panah">➔</span> Kuliner Kota Waingapu
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 19 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 19</div>
+                <div class="rute-flow">
+                    Air Terjun Waimarang <span class="panah">➔</span> Pantai Tarimbang <span class="panah">➔</span> Sunset Bukit Ndapayami
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 20 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 20</div>
+                <div class="rute-flow">
+                    Kampung Adat Lambanapu <span class="panah">➔</span> Bukit Tenau <span class="panah">➔</span> Pantai Walakiri
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 21 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 21</div>
+                <div class="rute-flow">
+                    Bukit Piarakuku <span class="panah">➔</span> Sabana Puru Kambera <span class="panah">➔</span> Pantai Puru Kambera
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 22 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 22</div>
+                <div class="rute-flow">
+                    Kampung Adat Rende <span class="panah">➔</span> Pantai Walakiri <span class="panah">➔</span> Bukit Tenau
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 23 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 23</div>
+                <div class="rute-flow">
+                    Bukit Tanarara <span class="panah">➔</span> Kampung Adat Prailiu <span class="panah">➔</span> Pantai Londa Lima
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 24 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 24</div>
+                <div class="rute-flow">
+                    Bukit Wairinding <span class="panah">➔</span> Air Terjun Tanggedu <span class="panah">➔</span> Sabana Mondu
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 25 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 25</div>
+                <div class="rute-flow">
+                    Kampung Adat Patawang <span class="panah">➔</span> Air Terjun Waimarang <span class="panah">➔</span> Sunset Pantai Walakiri
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 26 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 26</div>
+                <div class="rute-flow">
+                    Bukit Tenau <span class="panah">➔</span> Bukit Wairinding <span class="panah">➔</span> Kuliner Tradisional Waingapu
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 27 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 27</div>
+                <div class="rute-flow">
+                    Sabana Puru Kambera <span class="panah">➔</span> Pantai Londa Lima <span class="panah">➔</span> Sunset Pantai Walakiri
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 28 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 28</div>
+                <div class="rute-flow">
+                    Bukit Ndapayami <span class="panah">➔</span> Kampung Adat Prailiu <span class="panah">➔</span> Bukit Wairinding
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 29 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 29</div>
+                <div class="rute-flow">
+                    Air Terjun Waimarang <span class="panah">➔</span> Kampung Adat Lambanapu <span class="panah">➔</span> Pantai Walakiri
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 30 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 30</div>
+                <div class="rute-flow">
+                    Bukit Mondu <span class="panah">➔</span> Pantai Puru Kambera <span class="panah">➔</span> Sunset Bukit Tenau
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

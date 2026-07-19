@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori 4: 30 Paket Sumba Barat Daya - Sewa XL7</title>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ffc107;
+            position: relative;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+                color: #ffc107;
+                text-transform: uppercase;
+            }
+
+        /* Tombol Kembali ke Menu Utama */
+        .btn-kembali {
+            position: absolute;
+            left: 20px;
+            top: 22px;
+            background: #ffc107;
+            color: #111;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+            .btn-kembali:hover {
+                background: #e0a800;
+            }
+
+        main {
+            margin: 30px auto;
+            max-width: 900px;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        /* Wadah List Paket */
+        .container-paket {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Kartu Desain Estafet Searah per Paket */
+        .kartu-paket {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .info-nomor {
+            background: #ffc107;
+            color: #111;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 15px;
+            min-width: 75px;
+            text-align: center;
+        }
+
+        /* Tampilan Rute Mengalir Panah */
+        .rute-flow {
+            flex-grow: 1;
+            margin: 0 20px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .panah {
+            color: #ffc107;
+            margin: 0 8px;
+            font-weight: bold;
+        }
+
+        /* Tombol Pesan Langsung via WA */
+        .btn-book {
+            background: #25d366; /* Warna Hijau WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: transform 0.2s;
+            white-space: nowrap;
+        }
+
+            .btn-book:hover {
+                transform: scale(1.05);
+                background: #20ba5a;
+            }
+
+        /* Optimasi Tampilan Handphone */
+        @media (max-width: 650px) {
+            header {
+                padding: 60px 0 15px 0;
+            }
+
+            .btn-kembali {
+                left: 50%;
+                transform: translateX(-50%);
+                top: 15px;
+            }
+
+            .kartu-paket {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .rute-flow {
+                margin: 10px 0;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            .panah {
+                display: block;
+                margin: 4px 0;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- KOP / HEADER DENGAN TOMBOL KEMBALI -->
+    <header>
+        <a href="HTMLPage1.html" class="btn-kembali">⬅ Kembali</a>
+        <h1>30 Paket Wisata Sumba Barat Daya</h1>
+    </header>
+
+    <!-- DAFTAR PAKET -->
+    <main>
+        <div class="container-paket">
+
+            <!-- PAKET 71 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 71</div>
+                <div class="rute-flow">
+                    Danau Weekuri <span class="panah">➔</span> Pantai Mandorak <span class="panah">➔</span> Kampung Adat Ratenggaro
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 72 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 72</div>
+                <div class="rute-flow">
+                    Bukit Lendongara <span class="panah">➔</span> Rumah Budaya Sumba <span class="panah">➔</span> Sunset Pantai Kita Mananga Aba
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 73 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 73</div>
+                <div class="rute-flow">
+                    Kampung Adat Wainyapu <span class="panah">➔</span> Pantai Pero <span class="panah">➔</span> Sunset Tanjung Karoso
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 74 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 74</div>
+                <div class="rute-flow">
+                    Danau Weekuri <span class="panah">➔</span> Pantai Kawona <span class="panah">➔</span> Pusat Oleh-oleh Waitabula
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 75 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 75</div>
+                <div class="rute-flow">
+                    Bukit Lendongara <span class="panah">➔</span> Danau Weekuri <span class="panah">➔</span> Pantai Mandorak
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 76 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 76</div>
+                <div class="rute-flow">
+                    Kampung Adat Ratenggaro <span class="panah">➔</span> Pantai Pero <span class="panah">➔</span> Sunset Pantai Kita Mananga Aba
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 77 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 77</div>
+                <div class="rute-flow">
+                    Rumah Budaya Sumba <span class="panah">➔</span> Pantai Kawona <span class="panah">➔</span> Sunset Tanjung Karoso
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 78 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 78</div>
+                <div class="rute-flow">
+                    Danau Weekuri <span class="panah">➔</span> Pantai Mandorak <span class="panah">➔</span> Pantai Pero
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 79 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 79</div>
+                <div class="rute-flow">
+                    Bukit Lendongara <span class="panah">➔</span> Kampung Adat Wainyapu <span class="panah">➔</span> Kampung Adat Ratenggaro
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 80 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 80</div>
+                <div class="rute-flow">
+                    Rumah Budaya Sumba <span class="panah">➔</span> Pantai Kita Mananga Aba <span class="panah">➔</span> Sunset Pantai Kawona
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 81 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 81</div>
+                <div class="rute-flow">
+                    Danau Weekuri <span class="panah">➔</span> Kampung Adat Ratenggaro <span class="panah">➔</span> Sunset Pantai Pero
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 82 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 82</div>
+                <div class="rute-flow">
+                    Bukit Lendongara <span class="panah">➔</span> Pantai Mandorak <span class="panah">➔</span> Pantai Kita Mananga Aba
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 83 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 83</div>
+                <div class="rute-flow">
+                    Kampung Adat Wainyapu <span class="panah">➔</span> Rumah Budaya Sumba <span class="panah">➔</span> Sunset Tanjung Karoso
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 84 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 84</div>
+                <div class="rute-flow">
+                    Danau Weekuri <span class="panah">➔</span> Pantai Kawona <span class="panah">➔</span> Sunset Pantai Pero
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 85 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 85</div>
+                <div class="rute-flow">
+                    Bukit Lendongara <span class="panah">➔</span> Kampung Adat Ratenggaro <span class="panah">➔</span> Pantai Mandorak
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 86 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 86</div>
+                <div class="rute-flow">
+                    Rumah Budaya Sumba <span class="panah">➔</span> Danau Weekuri <span class="panah">➔</span> Sunset Pantai Kita Mananga Aba
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">   Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 87 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 87</div>
+                <div class="rute-flow">
+                    Kampung Adat Wainyapu <span class="panah">➔</span> Pantai Pero <span class="panah">➔</span> Pantai Kawona
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 88 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 88</div>
+                <div class="rute-flow">
+                    Bukit Lendongara <span class="panah">➔</span> Danau Weekuri <span class="panah">➔</span> Kampung Adat Ratenggaro
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 89 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 89</div>
+                <div class="rute-flow">
+                    Pantai Mandorak <span class="panah">➔</span> Rumah Budaya Sumba <span class="panah">➔</span> Sunset Tanjung Karoso
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 90 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 90</div>
+                <div class="rute-flow">
+                    Kampung Adat Ratenggaro <span class="panah">➔</span> Pantai Kawona <span class="panah">➔</span> Sunset Pantai Kita Mananga Aba
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 91 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 91</div>
+                <div class="rute-flow">
+                    Danau Weekuri <span class="panah">➔</span> Pantai Mandorak <span class="panah">➔</span> Sunset Pantai Pero
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 92 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 92</div>
+                <div class="rute-flow">
+                    Bukit Lendongara <span class="panah">➔</span> Rumah Budaya Sumba <span class="panah">➔</span> Sunset Tanjung Karoso
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 93 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 93</div>
+                <div class="rute-flow">
+                    Kampung Adat Wainyapu <span class="panah">➔</span> Kampung Adat Ratenggaro <span class="panah">➔</span> Pantai Kita Mananga Aba
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 94 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 94</div>
+                <div class="rute-flow">
+                    Danau Weekuri <span class="panah">➔</span> Pantai Kawona <span class="panah">➔</span> Pusat Oleh-oleh Waitabula
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 95 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 95</div>
+                <div class="rute-flow">
+                    Bukit Lendongara <span class="panah">➔</span> Pantai Mandorak <span class="panah">➔</span> Sunset Pantai Pero
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 96 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 96</div>
+                <div class="rute-flow">
+                    Rumah Budaya Sumba <span class="panah">➔</span> Kampung Adat Ratenggaro <span class="panah">➔</span> Sunset Pantai Kita Mananga Aba
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 97 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 97</div>
+                <div class="rute-flow">
+                    Danau Weekuri <span class="panah">➔</span> Kampung Adat Wainyapu <span class="panah">➔</span> Sunset Tanjung Karoso
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 98 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 98</div>
+                <div class="rute-flow">
+                    Bukit Lendongara <span class="panah">➔</span> Pantai Kawona <span class="panah">➔</span> Sunset Pantai Pero
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 99 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 99</div>
+                <div class="rute-flow">
+                    Kampung Adat Ratenggaro <span class="panah">➔</span> Pantai Mandorak <span class="panah">➔</span> Pantai Kita Mananga Aba
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+            <!-- PAKET 100 -->
+            <div class="kartu-paket">
+                <div class="info-nomor">Paket 100</div>
+                <div class="rute-flow">
+                    Danau Weekuri <span class="panah">➔</span> Rumah Budaya Sumba <span class="panah">➔</span> Bandara Tambolaka (Paket Drop-off Akhir)
+                </div>
+                <a href="https://wa.me" target="_blank" class="btn-book">🚖 Pesan XL7</a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
