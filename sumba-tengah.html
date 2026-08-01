@@ -364,7 +364,7 @@
  <!-- Taruh script JavaScript ini di bagian paling bawah file HTML Anda (sebelum tag </body>) -->
             <script>
         function kirimWA(elemen) {
-                    var nomorWA = "6285333467345";
+                    var nomorWA = "";
                     var namaPaket = elemen.getAttribute("data-paket");
 
                     // Teks rincian yang bisa Anda baca dan edit dengan mudah di script
@@ -381,8 +381,7 @@
                         "Nama Hotel / Lokasi Jemput : ";
 
                     // Mengubah teks otomatis menjadi format URL link WhatsApp
-                    var linkWA = "https://wa.me" + 6285333467345 + "?text=" + encodeURIComponent(isiPesan);
-
+    var linkWA = "https://wa.me/6285333467345" + nomorWA + "?text=" + encodeURIComponent(isiPesan);
                     // Membuka tab baru ke WhatsApp
                     window.open(linkWA, '_blank');
                 }
