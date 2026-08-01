@@ -442,18 +442,27 @@
                     var nomorWA = "";
                     var namaPaket = elemen.getAttribute("data-paket");
 
-                    // Teks rincian yang bisa Anda baca dan edit dengan mudah di script
-                    var isiPesan = "Halo saya tertarik dengan *" + namaPaket + "*.\n\n" +
-                        "Berikut rincian layanan tur harian standar kami:\n\n" +
-                        "🚘 Jenis Layanan: Tur Privat Sehari Penuh (Sudah Termasuk Sopir + Mobil + Bensin/BBM)\n" +
-                        "⏱️ Jam Operasional: Sekitar 5 hingga 10 jam per hari (tergantung rute paket yang dipilih)\n" +
-                        "📍 Ritme Perjalanan: Sangat santai! Waktu berkendara rata-rata antar lokasi hanya 20-45 menit, memberi Anda waktu 1-3 jam untuk menikmati setiap destinasi sepenuhnya.\n" +
-                        "💰 Tarif: Mulai dari Rp 800.000 hingga Rp 3.300.000 / hari (Semua Termasuk, tanpa biaya tersembunyi).\n" +
-                        "Kami memiliki 100 paket tur harian pilihan yang mencakup Sumba Timur, Sumba Tengah, Sumba Barat, dan Sumba Barat Daya.\n\n" +
-                        "Silakan lengkapi format pesan ini:\n\n" +
-                        "Nama Anda : \n" +
-                        "Tanggal & Durasi : \n" +
-                        "Nama Hotel / Lokasi Jemput : ";
+                    // Teks rincian yang dioptimalkan untuk konversi tinggi dan kenyamanan membaca
+var isiPesan = "🌟 *WOW! PILIHAN YANG SANGAT TEPAT!* 🌟\n" +
+    "Halo Kak, terima kasih sudah tertarik dengan paket eksklusif kami:\n" +
+    "📦 *KODE PAKET:* _" + namaPaket + "_\n\n" +
+
+    "✨ *PENAWARAN HARGA TERBAIK UNTUK ANDA* ✨\n" +
+    "💰 *Tarif:* Mulai dari *Rp 800.000 - Rp 3.300.000 / hari*\n" +
+    "🌿 _(Sudah ALL-IN: Mobil + Sopir Ramah + BBM. Tanpa biaya tersembunyi!)_\n\n" +
+
+    "📝 *FORMULIR PEMESANAN CEPAT (Mohon Dilengkapi):* \n" +
+    "👤 Nama Anda : \n" +
+    "📅 Tanggal & Durasi : \n" +
+    "🏨 Lokasi Jemput / Hotel : \n\n" +
+
+    "🔥 *KENAPA ANDA AKAN MENYUKAI TUR INI?* 🔥\n" +
+    "🚘 *Fasilitas VIP:* Tur Privat Sehari Penuh, khusus untuk kenyamanan Anda dan orang tersayang.\n" +
+    "⏱️ *Waktu Fleksibel:* Durasi santai 5-10 jam per hari, bebas drama dan buru-buru.\n" +
+    "📍 *Perjalanan Nyaman:* Jarak antar destinasi hanya 20-45 menit. Anda punya waktu puas 1-3 jam di setiap lokasi foto terbaik!\n" +
+    "🗺️ *Pilihan Terlengkap:* Ada 100+ paket tur harian pilihan menjelajahi keindahan Sumba Timur, Sumba Tengah, Sumba Barat, hingga Sumba Barat Daya.\n\n" +
+
+    "🎁 *Slot terbatas untuk minggu ini! Amankan kursi Anda sekarang dan bersiaplah untuk petualangan tak terlupakan di Sumba!* 👇";
 
                     // Mengubah teks otomatis menjadi format URL link WhatsApp
     var linkWA = "https://wa.me/6282147620822" + nomorWA + "?text=" + encodeURIComponent(isiPesan);
